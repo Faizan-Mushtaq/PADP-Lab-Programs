@@ -1,10 +1,10 @@
 p1a-- gcc Prog1a_Pi_estimate_openmp.c -fopenmp
 p1b--mpicc Prog1b_Pi_estimate_mpi.c
-      mpirun -np 4 ./a.out 
+      mpirun -np 4 ./a.out
 
 
-p2mm--gcc name.c
-p2mmthreads--gcc matrixmulwiththreads.c -fopenmp   gcc Matrixmulprg2.c -fopenmp
+
+p2mmthreads--gcc Prog2_MatrixMul_opemmp.c -fopenmp
 p3--g++ Program3\(1\).cpp -fopenmp
 p4--gcc pgm4.c -fopenmp -lgd
 p5--gcc pointsclassify.c -fopenmp -lgd -lm
