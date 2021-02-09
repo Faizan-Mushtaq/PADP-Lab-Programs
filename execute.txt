@@ -1,0 +1,16 @@
+p1a-- gcc Prog1a_Pi_estimate_openmp.c -fopenmp
+p1b--mpicc Prog1b_Pi_estimate_mpi.c
+      mpirun -np 4 ./a.out 
+
+
+p2mm--gcc name.c
+p2mmthreads--gcc matrixmulwiththreads.c -fopenmp   gcc Matrixmulprg2.c -fopenmp
+p3--g++ Program3\(1\).cpp -fopenmp
+p4--gcc pgm4.c -fopenmp -lgd
+p5--gcc pointsclassify.c -fopenmp -lgd -lm
+p6--gcc pgm6.c -fopenmp -lm //Program6.c
+p7--mpicc prog7\ \(2\).c  then  mpirun -np 3 ./a.out
+p8--mpicc prog8.c  then mpirun -np 3 ./a.out
+p9--mpicc prog9.c then mpirun -np 3 ./a.out
+p10-- gcc p10.c  then  ./a.out 100 or 1000 or etc
+p11--gcc p11.c -fopenacc -foffload=disable -lm  or gcc p11.c
