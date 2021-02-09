@@ -6,7 +6,7 @@ p2mmthreads--gcc Prog2_MatrixMul_opemmp.c -fopenmp
 
 p3--g++ Prog3_CacheUnFrn_Frn_Parallel.cpp -fopenmp
 p4--gcc Prog4_ImageConvet_openmp.c -fopenmp -lgd
-p5--gcc pointsclassify.c -fopenmp -lgd -lm
+p5--gcc Prog5_PointsClassify_openmp.c -fopenmp -lm
 p6--gcc pgm6.c -fopenmp -lm //Program6.c
 p7--mpicc prog7\ \(2\).c  then  mpirun -np 3 ./a.out
 p8--mpicc prog8.c  then mpirun -np 3 ./a.out
