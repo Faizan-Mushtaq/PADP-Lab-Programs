@@ -10,8 +10,8 @@ p6--gcc Prog6_WordSearch_openmp.c -fopenmp
 p7--mpicc Prog7_MultiTasking_mpi.c
     then  mpirun -np 3 ./a.out
 
-p8--mpicc Prog8_Quadrature_Integral_mpi.c
-    then mpirun -np 3 ./a.out
+p8--mpicc Prog8_Quadrature_Integral_mpi.c -m
+    then mpirun -np 4 ./a.out
 
 p9--mpicc Prog9_RingNVectorIO_mpi.c
     then mpirun -np 3 ./a.out
