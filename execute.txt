@@ -3,12 +3,13 @@ p1b--mpicc Prog1b_Pi_estimate_mpi.c
       mpirun -np 4 ./a.out
 
 p2mmthreads--gcc Prog2_MatrixMul_opemmp.c -fopenmp
-
 p3--g++ Prog3_CacheUnFrn_Frn_Parallel.cpp -fopenmp
 p4--gcc Prog4_ImageConvet_openmp.c -fopenmp -lgd
 p5--gcc Prog5_PointsClassify_openmp.c -fopenmp -lm
-p6--gcc pgm6.c -fopenmp -lm //Program6.c
-p7--mpicc prog7\ \(2\).c  then  mpirun -np 3 ./a.out
+p6--gcc Prog6_WordSearch_openmp.c -fopenmp
+p7--mpicc Prog7_MultiTasking_mpi.c
+    then  mpirun -np 3 ./a.out
+    
 p8--mpicc prog8.c  then mpirun -np 3 ./a.out
 p9--mpicc prog9.c then mpirun -np 3 ./a.out
 p10-- gcc p10.c  then  ./a.out 100 or 1000 or etc
