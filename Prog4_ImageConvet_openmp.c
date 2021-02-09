@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<error.h>
 #include<gd.h>
 #include<omp.h>
 #include<string.h>
@@ -33,7 +32,8 @@ int main(int argc,char **argv){
         omp_set_schedule(def_sched,def_chunk_size);
       }
       else
-        omp_set_schedule(sched,0);
+        omp_set_schedule(sched,1);
+
       double t=omp_get_wtime();
       #pragma omp parallel for private(y,color,red,green,blue,tmp,tid)
       for(x=0;x<w;x++){
