@@ -15,6 +15,10 @@ p8--mpicc Prog8_Quadrature_Integral_mpi.c
 
 p9--mpicc Prog9_RingNVectorIO_mpi.c
     then mpirun -np 3 ./a.out
-    
-p10-- gcc p10.c  then  ./a.out 100 or 1000 or etc
-p11--gcc p11.c -fopenacc -foffload=disable -lm  or gcc p11.c
+
+p10-- gcc Prog10_MatrixMul_OpenAcc.c
+ then  ./a.out 100 or 1000 or etc
+ or
+ pgcc -acc -ta=multicore -Minfo=accel Prog10_MatrixMul_OpenAcc.c
+
+p11--gcc Prog11_Jacobi_OPenAcc.c -fopenacc -foffload=disable -lm
